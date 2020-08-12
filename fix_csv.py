@@ -8,12 +8,12 @@ quote = "'"
 file_input = open(file_input_name, "r")
 old_text = file_input.read()
 file_input.close()
-print(old_text)
+print("file_input: \n"+str(old_text))
 
 
 new_text = old_text.replace(delimiter, ",")
-print(new_text)
-file_output = open(file_output_name, "r")
+print("\nfile_output: \n"+str(new_text))
+file_output = open(file_output_name, "w")
 file_output.write(new_text)
 file_output.close()
 
